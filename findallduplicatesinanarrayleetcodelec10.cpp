@@ -7,9 +7,9 @@ class Solution {
 public:
     vector<int> findDuplicates(vector<int>& nums) {
         vector<int> v;
-        for(int i=1;i<=nums.size();i++)
+        for(int i=0;i<nums.size();i++)
         {
-            int k=abs(nums[i-1]);
+            int k=abs(nums[i]);
             nums[k-1]=-1*nums[k-1];
             if(nums[k-1]>0) v.push_back(k); 
         

@@ -1,17 +1,22 @@
-//one more approach: Count the no of set bits and if the no of set bits is 1 then it is a power of two.
+      //best 2 liner approach
+        // if(n<=0) return false;
+        // return (n&(n-1))==0;
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
         if(n==0)return false;
         int ans=1;
-        for(int i=0;i<=30;i++)
-        {
                if(ans==n)
             {
                 return true;
             }
-            if(ans< INT_MAX/2)
+        for(int i=1;i<=30;i++)
+        {
             ans=ans*2;
+                   if(ans==n)
+            {
+                return true;
+            }
          
         }
         return false;

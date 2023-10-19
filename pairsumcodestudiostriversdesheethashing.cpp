@@ -49,27 +49,28 @@ vector<vector<int>> pairSum(vector<int> &arr, int s){
    return ans;
 }
 //Approach 2 using only map, for this solution refer to solution tab approach 2
-//Approach 3 using multimap, this is similar to approach 2
+//Approach 3 
 // find,count,insertion/deletion takes logn time so here TC=O(nlogn)
 //    vector<vector<int>> ans;
-//    multimap<int,int> mp;
+//       map<int,int> mp;
         
 //         for(int i=0;i<arr.size();i++)
 //         {
-//             vector<int> subans;
-//             if(mp.count(s-arr[i]))
+            
+//             if(mp[(s-arr[i])])
 //             {
 //               int a=arr[i];
 //               int b=s-arr[i];
-//               int cnt=mp.count(s-arr[i]);
+//               int cnt=mp[(s-arr[i])];
 //               while (cnt) {
+//                 vector<int> subans;
 //                 subans.push_back(min(a, b));
 //                 subans.push_back(s - min(a, b));
 //                 ans.push_back(subans);
 //                 cnt--;
 //               }
 //             }
-//             mp.insert({arr[i],i});
+//             mp[arr[i]]++;
 //         }
 //         sort(ans.begin(),ans.end());
 //         return ans;

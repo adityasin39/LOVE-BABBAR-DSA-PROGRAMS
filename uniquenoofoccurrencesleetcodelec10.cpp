@@ -1,3 +1,5 @@
+// best approach
+//Since our values are limited to [-1000, 1000], we can use an array instead of hash set to count occurrences. Then, we //can sort our array and check that no adjacent numbers are the same.
 //Here i have listed  down 4 sort of different solutions. Tried but didnt find any brute force solution.
 //1st approach.
 class Solution {

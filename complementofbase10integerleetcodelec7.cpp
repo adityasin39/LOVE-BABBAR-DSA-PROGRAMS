@@ -12,7 +12,7 @@ public:
             
             m=m>>1;
         }
-        int ans= ~(n)&mask;
+        int ans= (n)^mask;
         return ans;
     }
 };

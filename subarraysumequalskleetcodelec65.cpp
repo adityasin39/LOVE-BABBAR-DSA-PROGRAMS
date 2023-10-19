@@ -1,3 +1,4 @@
+// if you dont understand then refer to https://www.youtube.com/watch?v=xvNwoz-ufXA
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {

@@ -5,7 +5,7 @@ void merge(int arr[],int start,int mid,int end)
     int mergedarr[end-start+1];
     int i=start;
     int j=mid+1;
-    int k=start;
+    int k=0;
     while(i<=mid && j<=end)
     {
         if(arr[i]<arr[j])
@@ -22,7 +22,7 @@ void merge(int arr[],int start,int mid,int end)
     {
         mergedarr[k++]=arr[j++];
     }
-    for(int s=start;s<=end;s++) arr[s]=mergedarr[s];
+    for(int s=start;s<=end;s++) arr[s]=mergedarr[s-start];
 
 }
 void mergesort(int arr[],int s,int e)

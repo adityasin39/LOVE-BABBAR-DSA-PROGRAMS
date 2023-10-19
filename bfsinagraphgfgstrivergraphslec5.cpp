@@ -1,6 +1,6 @@
     //TC=O(V+2E) and SC=O(v)
     // for every vertex,we visit adjacent nodes which is actually the degree.And this will happen for each vertex and we know that total degree=2E.
-    // Thus TC=O(V+2E)
+    // Thus TC=O(V+2E) for undirected graph and O(V+E) for directed graph.
     // if you dont understand then refer to https://takeuforward.org/graph/breadth-first-search-bfs-level-order-traversal/
     vector<int> bfsOfGraph(int V, vector<int> adj[]) {
         queue<int> q;

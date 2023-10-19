@@ -4,7 +4,6 @@ bool isPossible(vector<int>& nums, int threshold,int n,int mid)
     int sum=0;
     for(int i=0;i<n;i++)
     {
-        if(mid==0) return false;
        division=ceil(nums[i]/float(mid));
        sum+=division;
        if(sum>threshold) return false;
